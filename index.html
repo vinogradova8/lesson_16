@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 16</title>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<section class="page">
+			<div class="page__container">
+				<div class="page__image">
+					<img src="img/illustration-page.svg" alt="">
+				</div>
+				<div class="page__info">
+					<div class="page__title-block title-block">
+						<h3 class="title-block__subtitle">Any questions?</h3>
+						<h2 class="title-block__title">Drop us a line</h2>
+					</div>
+					<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="page__form form">
+						<div class="form__name">
+							<div class="form__first-name first-name">
+								<label for="first-name-01" class="first-name__label">First Name*</label>
+								<input type="text" name="first-name" id="first-name-01" placeholder="Your first name" required
+									class="first-name__input">
+							</div>
+							<div class="form__last-name last-name">
+								<label for="last-name-01" class="last-name__label">Last Name*</label>
+								<input type="text" name="last-name" id="last-name-01" placeholder="Your last name" required
+									class="last-name__input">
+							</div>
+						</div>
+						<div class="form__contacts">
+							<div class="form__email email">
+								<label for="email-01" class="first-name__label">Email*</label>
+								<input type="email" name="email" id="email-01" placeholder="Your working email" required
+									class="email__input">
+							</div>
+							<div class="form__phone phone">
+								<label for="phone-01" class="phone__label">Phone</label>
+								<input type="tel" name="phone" id="phone-01" placeholder="Your phone number"
+									class="phone__input">
+							</div>
+						</div>
+						<div class="form__message message">
+							<label for="message-01" class="message__label">Message*</label>
+							<textarea name="message" id="message-01" placeholder="Your message" required
+								class="message__textarea"></textarea>
+						</div>
+						<div class="form__radio radio">
+							<div class="radio__title">I am going to study:</div>
+							<div class="radio__item">
+								<input id="radio-01" type="radio" name="course" value="marketing" class="radio__input">
+								<label for="radio-01" class="radio__label">Marketing</label>
+							</div>
+							<div class="radio__item">
+								<input id="radio-02" type="radio" name="course" value="management" class="radio__input">
+								<label for="radio-02" class="radio__label">Management</label>
+							</div>
+							<div class="radio__item"><input id="radio-03" type="radio" name="course" value="design"
+									class="radio__input">
+								<label for="radio-03" class="radio__label">Design</label>
+							</div>
+						</div>
+						<div class="form__actions actions">
+							<div class="actions__agreement">
+								<input type="checkbox" required name="agreement" id="agreement-01" class="actions__input">
+								<label for="agreement-01" class="actions__label"><span class="actions__text">I agree to receive
+										communications from Createx
+										Online School</span></label>
+							</div>
+							<button type="submit" class="actions__button button">Send message</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<form class="my-form" action="https://jsonplaceholder.typicode.com/posts" method="post"
+			enctype="multipart/form-data">
+			<div class="my-form__container">
+				<div class="my-form__name my-name">
+					<label class="my-name__label" for="my-name">Your name*</label>
+					<input class="my-name__input" type="text" name="name" id="my-name" placeholder="Your name" required>
+				</div>
+				<div class="my-form__number my-number">
+					<label class="my-number__label" for="my-name">Your number*</label>
+					<input class="my-number__input" type="number" name="number" id="my-number" placeholder="Your number"
+						required>
+				</div>
+				<div class="my-form__password my-password">
+					<label class="my-password__label" for="my-password">Your password*</label>
+					<input class="my-password__input" type="password" name="password" id="my-password"
+						placeholder="Your password" required>
+				</div>
+				<div class="my-form__phone my-phone">
+					<label class="my-phone__label" for="my-phone">Your phone*</label>
+					<input class="my-phone__input" type="tel" name="phone" id="my-phone" placeholder="Your phone" required>
+				</div>
+				<div class="my-form__color my-color">
+					<label class="my-color__label" for="my-color">Your color</label>
+					<input class="my-color__input" type="color" name="color" id="my-color">
+				</div>
+				<div class="my-form__date my-date">
+					<label class="my-date__label" for="my-date">Choose the date*</label>
+					<input class="my-date__input" type="date" name="date" id="my-date" required>
+				</div>
+				<div class="my-form__vaccine my-vaccine">
+					<span class="my-vaccine__text">Are you vaccinated?*</span>
+					<div class="my-vaccine__item">
+						<input class="my-vaccine__input" type="radio" name="my-vaccine" value="yes" id="my-vaccine-yes">
+						<label class="my-vaccine__label" for="my-vaccine-yes">Yes</label>
+					</div>
+					<div class="my-vaccine__item">
+						<input class="my-vaccine__input" type="radio" name="my-vaccine" value="no" id="my-vaccine-no">
+						<label class="my-vaccine__label" for="my-vaccine-no">No</label>
+					</div>
+				</div>
+				<div class="my-form__select my-select">
+					<label class="my-select__text" for="my-select">Choose type of vaccine</label>
+					<select class="my-select__select" name="type of vaccine" id="my-select" multiple>
+						<option class="my-select__item" value="phizer">Phizer</option>
+						<option class="my-select__item" value="moderna">Moderna</option>
+						<option class="my-select__item" selected value="coronovac">Coronovac</option>
+					</select>
+				</div>
+				<div class="my-form__file my-file">
+					<span class="my-file__text">Add your vaccination certificate</span>
+					<input class="my-file__input" type="file" name="certificate" id="my-file" multiple
+						accept="image/jpeg, .doc, .docx, .pdf">
+					<label class="my-file__label" for="my-file">Choose your file</label>
+				</div>
+				<button class=" my-form__button button button--my" type="submit">Send form</button>
+			</div>
+		</form>
+	</div>
+
+</body>
+
+</html>

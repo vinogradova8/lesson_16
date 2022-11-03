@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+@import "reset.css";
+
+body {
+	color: #424551;
+	font-family: "Lato";
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.page {
+	padding: 180px 15px;
+}
+
+.page__container {
+	max-width: 1245px;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 40px;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.page__image {
+	flex: 0 1 435px;
+}
+
+.page__image img {
+	max-width: 100%;
+}
+
+.page__info {
+	padding-left: 105px;
+	flex: 0 1 705px;
+}
+.page__title-block {
+	margin-bottom: 40px;
+}
+
+.title-block {
+	color: #1E212C;
+}
+
+.title-block__subtitle {
+	font-weight: 700;
+	line-height: 1.5;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+}
+
+.title-block__title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 1.3;
+}
+
+.form__name {
+	display: flex;
+	gap: 25px;
+	margin-bottom: 24px;
+}
+
+[class*="__label"] {
+	line-height: 1.6;
+	display: inline-block;
+}
+
+
+[class*="__input"]:focus,
+.message__textarea:focus {
+	box-shadow: 2px 2px 5px #F75E05;
+}
+
+.first-name__input,
+.last-name__input,
+.email__input,
+.phone__input {
+	height: 52px;
+	width: 340px;
+	border-radius: 4px;
+	border: 1px solid #D7DADD;
+	padding-left: 16px;
+}
+
+.first-name__label,
+.last-name__label,
+.email__label,
+.phone__label,
+.message__label {
+	margin-bottom: 8px;
+}
+
+.form__contacts {
+	display: flex;
+	gap: 25px;
+	margin-bottom: 24px;
+}
+
+.form__message {
+	margin-bottom: 48px;
+}
+
+.message__textarea {
+	height: 128px;
+	width: 705px;
+	border-radius: 4px;
+	border: 1px solid #D7DADD;
+	padding: 13px 0px 0px 16px;
+	resize: vertical;
+}
+
+.actions {
+	display: flex;
+	justify-content: space-between;
+}
+
+.actions__agreement {
+	flex: 0 1 315px;
+}
+
+.actions__input {
+	width: 0;
+	height: 0;
+	position: absolute;
+	opacity: 0;
+}
+
+.actions__input:checked + .actions__label::before {
+	background: #FF3F3A url("../img/icons/check.svg") center no-repeat;
+}
+
+.actions__label {
+	cursor: pointer;
+	display: inline-flex;
+	position: relative;
+}
+
+.actions__label::before {
+	display: inline-block;
+	content: "";
+	background: #FF3F3A;
+	border: 1px solid #FF3F3A;
+	border-radius: 3px;
+	width: 16px;
+	height: 16px;
+	flex: 0 0 16px;
+	position: absolute;
+	top: 3px;
+}
+
+.actions__text {
+	align-self: center;
+	padding-left: 28px;
+}
+
+.button {
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+	border-radius: 4px;
+	color: #FFFFFF;
+	font-weight: 700;
+	padding: 18px 117px;
+	transition: 0.3s ease;
+}
+
+.button:hover {
+	background: linear-gradient(55.95deg, #a92e29 0%, #a94003 100%);
+	transition: 0.3s ease;
+}
+
+.form__radio {
+	margin-bottom: 30px;
+}
+
+.radio__title {
+	font-weight: 700;
+	line-height: 1.5;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+}
+.radio__item {
+}
+
+.radio__input {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	position: absolute;
+}
+
+.radio__label {
+	display: flex;
+	align-items: center;
+	gap: 4px
+}
+
+.radio__label::before {
+	content: "";
+	display: inline-block;
+	flex: 0 0 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 2px solid #FF3F3A;
+}
+
+.radio__input:checked + .radio__label::before {
+	background: #FF3F3A;
+}
+
+.my-form__container {
+	max-width: 300px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+	padding: 50px 15px;
+}
+
+.my-name,
+.my-number,
+.my-password,
+.my-phone,
+.my-color,
+.my-date,
+.my-select,
+.my-file {
+	display: flex;
+	flex-direction: column;
+	row-gap: 4px;
+}
+
+.my-name__input,
+.my-number__input,
+.my-password__input,
+.my-phone__input,
+.my-color__input,
+.my-date__input {
+	border: 2px solid #b3b9d7;
+	border-radius: 3px;
+	height: 30px;
+	width: 300px;
+	padding-left: 10px;
+}
+
+.my-name__input:focus,
+.my-number__input:focus,
+.my-password__input:focus,
+.my-phone__input:focus,
+.my-color__input:focus,
+.my-date__input:focus {
+	box-shadow: 2px 2px 5px #73a2bb;
+}
+
+.my-vaccine__text,
+.my-select__text,
+.my-file__text {
+	display: inline-block;
+	margin-bottom: 4px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.my-vaccine__input {
+	height: 0;
+	width: 0;
+	position: absolute;
+	opacity: 0;
+}
+
+.my-vaccine__label {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.my-vaccine__label::before {
+	display: inline-block;
+	content: "";
+	flex: 0 0 10px;
+	height: 10px;
+	border: 2px solid #73a2bb;
+	border-radius: 50%;
+}
+
+.my-vaccine__input:checked + .my-vaccine__label::before {
+	background: #73a2bb;
+}
+
+.my-form__file {
+	position: relative;
+}
+
+.my-file__input {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	position: absolute;
+}
+
+.my-file__label {
+	border: 1px solid #9aabe6;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.my-file__label:hover {
+	background: #6e89ea;
+	color: #fff;
+}
+
+.button--my {
+	padding: 18px 0px;
+}
